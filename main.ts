@@ -52,4 +52,4 @@ enum Signal {
 var results2: Signal;
 console.log(Signal[0])
 // 使い方：example: if (results === Signal.Green){処理}
-// console.log(results2[0]) エラー
+// console.log(results2[0]) エラー 
