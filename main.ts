@@ -31,4 +31,25 @@ x = 10
 x = "title"
 
 var results: number[]
-results = [1,2,3,4,5]
+results = [1, 2, 3, 4, 5]
+
+// 列挙
+// signal
+
+// enum Signal{
+//   Red = 0,
+//   Blue = 1,
+//   Green = 2
+// }
+enum Signal{
+  Red,
+  Blue = 3,
+  Green // 前の数字を確認して4になる
+}
+enum Signal {
+  Purple = 5 // マージされる
+}
+var results2: Signal;
+console.log(Signal[0])
+// 使い方：example: if (results === Signal.Green){処理}
+// console.log(results2[0]) エラー
