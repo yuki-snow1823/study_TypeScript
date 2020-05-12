@@ -1,5 +1,6 @@
-// Interface
+// Interface 継承
 
+// aの情報を持っている
 interface SpringResult {
   a: number;
 }
@@ -8,8 +9,8 @@ interface FallResult {
   b: number;
 }
 
-interface FinalResult extends SpringResult, FallResult {
-  final?: number;
+interface FinalResult extends SpringResult, FallResult { //extendsで名前を書けば継承できる
+  final?: number; // 型の定義ではなくオプションにしている、必須ではなき
 }
 
 // function getTotal(result: FinalResult) {
